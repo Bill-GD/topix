@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start:concurrent": "concurrently --kill-others --prefix [{name}] --names be,fe --prefix-colors red,green \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:forked": "start cmd.exe /k \"npm run start:frontend\" && start cmd.exe /k \"npm run start:backend\"",
+    "start:frontend": "cd frontend && npm run dev",
+    "start:backend": "cd backend && npm run start:dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
