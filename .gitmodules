@@ -6,3 +6,7 @@
 	path = frontend
 	url = https://github.com/Bill-GD/topix-frontend.git
 	branch = main
+[submodule "mobile"]
+	path = mobile
+	url = https://github.com/Bill-GD/topix-mobile.git
+	branch = main
